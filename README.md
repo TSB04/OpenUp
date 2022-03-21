@@ -1,2 +1,0 @@
-# OpenUp
-Prjojet_Dev
