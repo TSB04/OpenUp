@@ -1,0 +1,251 @@
+
+
+
+
+
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+
+
+
+
+
+
+
+
+body{
+    /*
+    width: 99vw;
+    height: 99vh;
+    */
+
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+    padding: 0px;
+}
+
+h1, p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.border{
+    border: 0px solid black;
+}
+
+.active_page{
+    background-color: white!important;
+    color: black!important;
+}
+
+.inscri{
+    background-color: rgb(255, 68, 68);
+    color: black;
+}
+.connex{
+    background-color: rgb(55, 135, 255);
+    color: black;
+}
+
+.topmenu{
+    width: 100%;
+    min-height: 12px;
+    background-color: #333;
+    text-align: center;
+}
+
+.topmenu_logo{
+    display: inline-block;
+    margin: 0px 50px;
+    padding: 0px!important;
+}
+#topmenu_img_logo{
+    width: 40px;
+    height: 40px;
+}
+
+.main_nav{
+    display: inline-block;
+    padding: 0px;
+    margin: auto 50px;
+}
+
+.search_container{
+    display: inline-block;
+}
+.topmenu_list{
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topmenu_list li{
+    display: inline;
+}
+
+#topmenu_main_logo{
+    width: 40px;
+    height: auto;
+    padding: 0px 0px;
+    margin: 0px;
+}
+.topmenu_btn{
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+    background-color: rgb(143, 44, 44);
+    color: white;
+}
+.topmenu_btn a{
+    border-bottom: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+    /*min-width: 10px;
+    min-height: 10px;*/
+    text-decoration: none;
+}
+.topmenu_btn:hover{
+    background-color: #111;
+}
+
+.container_404 {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+.img_404{
+    width: 90vw;
+    height: auto;
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+
+
+
+
+.config_container{
+    padding: 0px 0px 50px 0px;
+}
+
+.sidenav {
+    z-index: 1;
+    height: fit-content;
+    width: 60vw;
+    background-color: #111;
+
+    padding: 20px 0px;
+    margin: 20px auto;
+}
+
+.dropdown-btn {
+    padding: 12px 8px 12px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+  
+
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+  
+
+.active {
+    background-color: rgb(0, 120, 0);
+    color: white;
+}
+  
+
+.dropdown_container-settings {
+    width: 95%;
+    margin: auto;
+    display: none;
+    background-color: #262626;
+}
+
+.dropdown_container-settings table{
+    width: 80%;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+  
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.table_settings{
+    border: 0px;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+}
+
+.sidenav form label {
+    color: white;
+    font-size: 20px;
+}
+
+.change_sett_input{
+    text-align: right;
+    font-size: 20px;
+}
+
+#valid_infogen_sett{
+    margin: 10px auto;
+}
+
+
+
+.submit_settings{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 54px;
+    font-size: 18px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
+.textarea_settings{
+    padding: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    resize: none;
+}
+
+
+.show_sett_label{
+    font-weight: bold;
+    color: rgb(184, 255, 144);
+}
+
+
+.horiz_line{
+    border: 1px solid white;
+}

@@ -1,0 +1,33 @@
+#AuthName "Site protégé par identification, veuillez vous identifier"
+#AuthType Basic
+#AuthUserFile "/home/corinneb/estiam/.htpasswd"
+#Require valid-user
+
+# Règles de réécriture pour Zend Framework
+RewriteEngine On
+
+#on ajoute le https à l'url modifié
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
+
+
+#Désactive le paramètre register_globals
+SetEnv REGISTER_GLOBALS 0
+#Désactive le paramètre magic_quotes_gcp
+SetEnv MAGIC_QUOTES 0
+
+
+# empêche le listage de repertoires
+IndexIgnore *
+
+#Définir la langue le jeu de caractères par défaut
+AddDefaultCharset UTF-8
+
+# Sécurité : Ne pas autoriser le parcours de répertoires
+Options -Indexes
